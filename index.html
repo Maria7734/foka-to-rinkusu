@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foka to Rinkusu — Официальный сайт визуальной новеллы</title>
+    <style>
+        :root {
+            /* Палитра в стиле биоинженерной лаборатории */
+            --bg-color: #0b0f19;       /* Глубокий космический/лабораторный цвет */
+            --card-color: #131a2c;     /* Цвет приборной панели */
+            --accent-color: #00d2ff;   /* Бирюзовый лазер / медицинский раствор */
+            --text-color: #ffffff;     /* Основной текст */
+            --muted-text: #8a99ad;     /* Вспомогательный текст */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 550px;
+            width: 100%;
+            background-color: var(--card-color);
+            padding: 40px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 210, 255, 0.1);
+            border: 1px solid rgba(0, 210, 255, 0.15);
+        }
+
+        .logo-area {
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: var(--text-color);
+            margin: 0 0 15px 0;
+            font-size: 32px;
+            font-weight: 700;
+            text-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+        }
+
+        .plot-badge {
+            display: inline-block;
+            background: rgba(0, 210, 255, 0.1);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--muted-text);
+            font-size: 15px;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .lab-notes {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 0 12px 12px 0;
+            font-size: 13px;
+            color: #b0c0d6;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #0b0f19;
+            padding: 18px 36px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
+            width: 80%;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 210, 255, 0.5);
+            background-color: #5ce6ff;
+        }
+
+        .screenshot-box {
+            margin-top: 40px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .screenshot-box img {
+            width: 100%;
+            display: block;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 11px;
+            color: #52637a;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-area">Проект Цифровых Кафедр</div>
+        <h1>Foka to Rinkusu</h1>
+        
+        <div class="plot-badge">Sci-Fi / Биоинженерия</div>
+        
+        <p>
+            Узнайте историю рысёнка Линке и его студента тюленя Фока. Погрузитесь в захватывающее интерактивное исследование, посвященное экспериментам с сывороткой крови, анализу патогенных аутоантител (AChR-Ab), ИФА-диагностике и созданию комплексного лекарства нового поколения.
+        </p>
+
+        <div class="lab-notes">
+            <strong>Лабораторная заметка:</strong> Мобильное приложение скомпилировано в формате .apk для устройств под управлением ОС Android. Для запуска потребуется разрешение на установку ПО из сторонних источников.
+        </div>
+        
+        <!-- Ссылка на файл, который сделает напарник -->
+        <a href="game.apk" class="download-btn" download>Инициализировать загрузку (.APK)</a>
+
+        <div class="screenshot-box">
+            <!-- Здесь будет отображаться скриншот вашей игры -->
+            <img src="screen1.png" alt="Интерфейс визуальной новеллы">
+        </div>
+
+        <footer>© 2026 РАЗРАБОТАНО В МЕДИКО-БИОЛОГИЧЕСКОМ СЕТТИНГЕ</footer>
+    </div>
+
+</body>
+</html>
